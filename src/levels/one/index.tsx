@@ -8,7 +8,7 @@ function One(nextLevel: any) {
     <h2>Level one</h2>
     <h3>Pet Marlow 50 times to continue</h3>
     <p>Pets: {pets}</p>
-    <img className="marlow" src={pets >= 50 ? marlow : marlowlove} alt="Marlow" height='450px' onClick={()=>setPets(pets+1)}/>
+    <img className="marlow" src={pets >= 50 ? marlowlove : marlow} alt="Marlow" height='450px' onClick={()=>setPets(pets+1)}/>
     {pets >= 50 &&
         <p>Petting quota achieved</p>}
         <h2 onClick={() => nextLevel()}>Click to progress to next level</h2>
