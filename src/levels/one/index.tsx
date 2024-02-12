@@ -10,8 +10,11 @@ function One(nextLevel: any) {
     <p>Pets: {pets}</p>
     <img className="marlow" src={pets >= 50 ? marlowlove : marlow} alt="Marlow" height='450px' onClick={()=>setPets(pets+1)}/>
     {pets >= 50 &&
-        <p>Petting quota achieved</p>}
-        <h2 onClick={() => nextLevel()}>Click to progress to next level</h2>
+    <div onClick={() => nextLevel()}>
+        <p>Petting quota achieved</p>
+        <h2>Click to progress to next level</h2>
+    </div>
+    }
     </>
 }
 
