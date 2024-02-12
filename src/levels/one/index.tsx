@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import marlow from '../../assets/marlow.png'
 import marlowlove from '../../assets/marlowlove.png'
 
