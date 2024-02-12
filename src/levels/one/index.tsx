@@ -1,8 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import imgUrl from '../../assets/marlow.png'
 
-function One() {
+function One(nextLevel: any) {
     const [pets, setPets] = useState(0)
+    useEffect(() => {
+        if (pets>=53) {
+            nextLevel();
+        }
+    }, [pets])
     return <>
     <h2>Level one</h2>
     <h3>Pet Marlow 50 times to continue</h3>
