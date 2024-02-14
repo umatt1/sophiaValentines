@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       {level === 1 &&
-        <One nextLevel={()=>{setLevel(level+1)}}/>}
+        <One nextLevel={()=>{setLevel(level+1); return;}}/>}
     </>
   )
 }

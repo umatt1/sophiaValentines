@@ -2,7 +2,11 @@ import { useState } from "react";
 import marlow from '../../assets/marlow.png'
 import marlowlove from '../../assets/marlowlove.png'
 
-const One = (nextLevel: any) => {
+interface OneProps {
+    nextLevel: () => void;
+}
+
+const One = ({nextLevel} : OneProps) => {
     const [pets, setPets] = useState(0)
     return <>
     <h2>Level one</h2>
