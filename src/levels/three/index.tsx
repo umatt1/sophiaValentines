@@ -23,10 +23,7 @@ const Three = ({ nextLevel }: ThreeProps) => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        // Perform any necessary form submission logic here
-        // For example, send formData to a server or perform validation
         setFormSubmitted(true);
-        console.log(e)
     };
 
     return (
