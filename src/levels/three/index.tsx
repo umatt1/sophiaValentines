@@ -50,7 +50,6 @@ const Three = ({ nextLevel }: ThreeProps) => {
                 </>
             ) : (
                 <>
-                    <h3>Write a poem</h3>
                     <form onSubmit={handleSubmit}>
                         <label>A cute nickname:
                             <input
