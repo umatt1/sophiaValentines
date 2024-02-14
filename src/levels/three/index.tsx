@@ -45,7 +45,7 @@ const Three = ({ nextLevel }: ThreeProps) => {
                 <p>The judge found them both guilty of {crime} and they are now serving {time} in prison together</p>
                 <p>Despite the unfortunate circumstance, Matt and Sophia are making the most of their time together in prison and bonding over a shared love of {like}</p>
                 <div onClick={() => nextLevel()}>
-                    <h2>Click to progress to next level</h2>
+                    <h2>Click to progress to the end</h2>
                 </div>
                 </>
             ) : (
